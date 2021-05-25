@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+    overflow: hidden;
+}
+.menu-btn{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.menu-btn.active{
+    z-index: 100;
+
+}
+.menu-btn.active img{
+    filter: invert(1);
+}
+.menu-btn img{
+    height: 60px;
+    width: 60px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: .5s;
+}
+.content{
+    position: absolute;
+    top:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    z-index: 1;
+    flex-direction: column;
+}
+.content span{
+    font-size: 120px;
+    font-weight: lighter;
+    font-family: 'Great Vibes';
+    margin-bottom: -60px;
+    color: maroon;
+    z-index: 2;
+}
+.content h1{
+    font-size: 150px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Bigilla';
+}
+.img-divs{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 350px;
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.img-divs .div1{
+    height: 350px;
+    width: 300px;
+    background: url(assets/pic2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.img-divs .div2{
+    height: 300px;
+    width: 300px;
+    background: url(assets/pic1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.img-divs .div3{
+    height: 350px;
+    width: 300px;
+    background: url(assets/pic3.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.menu{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-100%);
+    opacity: 0;
+    background-color: #000;
+    color: white;
+}
+.page-links{
+    margin-top: 45vh;
+
+}
+.page-links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+    justify-content: center;
+
+}
+.page-links ul .li {
+    font-size: 50px;
+    font-family: 'Bigilla';
+    margin-bottom: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.social-links{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+.social-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+.social-links ul li{
+    font-family: 'Monument';
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 0px 15px;
+    cursor: pointer;
+    font-weight: lighter;
+}
+.hover1{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 200px;
+    height: 100px;
+    background: url(assets/hover1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.hover2{
+    position: absolute;
+    top: 250px;
+    left: 1500px;
+    width: 270px;
+    height: 170px;
+    background: url(assets/hover2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.hover3{
+    position: absolute;
+    top: 800px;
+    left: 1200px;
+    width: 250px;
+    height: 150px;
+    background: url(assets/hover3.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.hover4{
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    width: 250px;
+    height: 150px;
+    background: url(assets/hover4.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+a:hover{
+    background-color: maroon;
+    transition: .3s ease-in-out;
+}
